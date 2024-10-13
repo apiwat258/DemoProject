@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: Demofinalyearproject         # Replace with a name for your service
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    autoDeploy: true                # Automatically deploy on every push
+    envVars:
+      DB_USER: postgres  # Replace with your database user
+      DB_HOST: 127.0.0.1   # Replace with your database host
+      DB_NAME: postgres     # Replace with your database name
+      DB_PASSWORD: Blockchain  # Replace with your database password
+      DB_PORT: '5432'                # Default PostgreSQL port
