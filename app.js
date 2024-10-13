@@ -12,11 +12,11 @@ app.use(express.static(path.join(__dirname, 'Public')));
 
 // Serve the HTML file
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'Public', 'ProduceRawMilk.html'));
+    res.sendFile(path.join(__dirname, 'View', 'ProduceRawMilk.html'));
 });
 // Serve the display demo page
 app.get('/display-demo', (req, res) => {
-    res.sendFile(path.join(__dirname, 'Public', 'DisplayDemo.html')); // Adjust the path as needed
+    res.sendFile(path.join(__dirname, 'View', 'DisplayDemo.html')); // Adjust the path as needed
 });
 
 
