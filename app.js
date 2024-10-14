@@ -22,11 +22,9 @@ app.get('/display-demo', (req, res) => {
 
 // PostgreSQL connection
 const pool = new Pool({
-    user: 'postgres',
-    host: 'localhost',
-    database: 'postgres',
-    password: 'Blockchain',
-    port: 5432,
+    connectionString: 'postgresql://demoblockchaintest_user:Ag9eYjOZEKgRb07Zmxz2ZTk59WOu7db7@dpg-cs5p12l6l47c73f6mj7g-a.oregon-postgres.render.com/demoblockchaintest',
+    ssl: {
+        rejectUnauthorized: false
 });
 
 
