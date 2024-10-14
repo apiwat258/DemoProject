@@ -25,7 +25,9 @@ const pool = new Pool({
     connectionString: 'postgresql://demoblockchaintest_user:Ag9eYjOZEKgRb07Zmxz2ZTk59WOu7db7@dpg-cs5p12l6l47c73f6mj7g-a.oregon-postgres.render.com/demoblockchaintest',
     ssl: {
         rejectUnauthorized: false
+    } // Properly closing the 'ssl' object
 });
+
 
 
 // Middleware
