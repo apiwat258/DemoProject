@@ -107,6 +107,10 @@
                                 <div id="Gmap" style="height: 400px; width: 400px;"></div>
                                 <input type="url" name="LocationLink" id="LocationLink" placeholder="https://example.com/location" required>
                             </div>
+                        </div>
+                            <input id="btn" type="submit" value="Submit" style="margin-top: 10px;">
+                            <p id="coordinates"></p> <!--Display coordinates-->
+                        </div>
 
                             <script>
             document.getElementById('milkForm').addEventListener('submit', function(e) {
@@ -211,10 +215,6 @@
                     </div>
                         </div>
                     </div>
-                </div>
-                <input id="btn" type="submit" value="Submit" style="margin-top: 10px;">
-                    <p id="coordinates"></p> <!--Display coordinates-->
-            </div>
             <div id="notification" style="display: none; background-color: #d4edda; color: #155724; padding: 10px; margin-top: 20px; border: 1px solid #c3e6cb; border-radius: 5px;">
                 <span id="notificationMessage"></span>
             </div>
